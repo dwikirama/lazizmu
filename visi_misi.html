@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Sidebar 02</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<style>
+			body {
+				font-family: 'Poppins', sans-serif;
+				overflow-x: hidden;
+				margin: 0;
+				padding: 0;
+			}
+
+			.banner-container {
+				overflow: hidden;
+			}
+	
+			.banner {
+				width: auto;
+				height: auto;
+				display:block;
+			}
+	
+			.white-space {
+				height: 65px;
+				width: auto;
+				background-color: #ffffff;
+			}
+	
+			.navbar {
+				background-color: #150327;
+				padding: 15px;
+				box-shadow: 0 4px 6px #ffffff;
+				display: flex;
+            	justify-content: space-between;
+            	align-items: center;
+				position: relative;
+				z-index: 1;
+			}
+	
+			.navbar-buttons {
+				margin-left: auto;
+			}
+	
+			.navbar-buttons button,
+			.navbar-buttons a {
+				margin-left: 10px;
+				background-color: #150327;
+				border-radius: 2cm;
+				border-style: double;
+				border-color: bisque;
+			}
+
+			.menu-top {
+				background-image: url(./images/LAZISMU\ BAWAH.png);
+				background-color: rgba(250, 255, 221, 0.797);
+				background-size: auto;
+				background-repeat: no-repeat;
+				background-position: center;
+				padding: 15px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				position: relative;
+				z-index: 2;
+				color: #ffffff;
+			}
+	
+			.menu-top a {
+				color: #ffffff;
+				text-decoration: none;
+				margin: auto;
+			}
+
+			#sidebarCollapse {
+				margin-right: 18px;
+			}
+	
+			#content {
+				width: 100%;
+				padding: 15px;
+				background: linear-gradient(to right, rgba(250, 255, 221, 0.797), #fecfef);
+			}
+
+			.logo img {
+					width: 100px;
+					height: auto;
+					margin-right: 10px;
+				}
+
+			p {
+				color: black;
+			}
+
+			.lazismu-image {
+				max-width: 100%; /* Gambar tidak boleh melebihi lebar container */
+				height: auto; /* Menyesuaikan tinggi sesuai aspek rasio gambar */
+				display: block; /* Menghindari margin bawah pada elemen inline */
+			}
+	
+			/* Add more styling as needed */
+	
+		</style>
+  </head>
+  <body>
+	
+	<div class="menu-top">
+        <div class="custom-menu">
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                <i class="fa fa-bars"></i>
+                <span class="sr-only">Toggle Menu</span>
+            </button>
+        </div>
+        <h1><a href="index.html" class="logo">
+			<img src="https://lazismulumajang.org/wp-content/uploads/2021/07/lembaga-amil-zakat-infaq-infak-dan-sedekah-sadaqah-muhammadiyah-lumajang-logo-header4.png" alt="LUMAJANG"></a></h1>
+    </div>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+        </div>
+				<div class="p-4 pt-5">
+		  		<h1><a href="index.html" class="logo" style="font-size: xx-large;"><img src="" alt="">LAZISMU LUMAJANG</a></h1>
+	        <ul class="list-unstyled components mb-5">
+	          <li class="active">
+				<a href="beranda.html">Beranda</a>
+	            <a href="#tentangkamiSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Tentang Kami</a>
+	            <ul class="collapse list-unstyled" id="tentangkamiSubmenu">
+                <li>
+                    <a href="profil_lembaga.html">Profil Lembaga</a>
+                </li>
+                <li>
+                    <a href="visi_misi.html">Visi & Misi</a>
+                </li>
+                <li>
+                    <a href="struktur_manajemen.html">Struktur Manajemen</a>
+                </li>
+				<li>
+					<a href="penghargaan.html">Penghargaan</a>
+				</li>
+				<li>
+					<a href="kantor_layanan.html">Kantor Layanan</a>
+				</li>
+	            </ul>
+	          </li>
+	          <li>
+	              <a href="program.html">Program</a>
+	          </li>
+	          <li>
+              <a href="#layananSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Layanan</a>
+              <ul class="collapse list-unstyled" id="layananSubmenu">
+                <li>
+                    <a href="#">AmbulansMU</a>
+                </li>
+                <li>
+                    <a href="#">Jemput Donasi</a>
+                </li>
+                <li>
+                    <a href="#">Konfirmasi Donasi</a>
+                </li>
+				<li>
+                    <a href="#">Konsultasi Online</a>
+                </li>
+				<li>
+                    <a href="qrkodedonasi.html">QR Code Donasi</a>
+                </li>
+              </ul>
+	          </li>
+	          <li>
+				<a href="#">Berita</a>
+			</li>
+			</li>
+			<li>
+			  <a href="Contact.html">Contact</a>
+	          </li>
+	        </ul>
+
+	        <div class="mb-5">
+		        <div class="social_media">
+		          <a href="https://www.facebook.com/lazismulumajangorg"><i class="fab fa-facebook-f"></i></a>
+		          <a href="https://twitter.com/LAZISMU"><i class="fab fa-twitter"></i></a>
+		          <a href="https://www.instagram.com/lazismulumajang"><i class="fab fa-instagram"></i></a>
+		        </div>
+			</div>
+
+	        <div class="footer">
+	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	        </div>
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+		<h2 class="mb-4" style="text-align: center;"><b>Visi & Misi</b></h2>
+		<p><b  style="font-size: large;">VISI</b><br> Menjadi lembaga amil zakat terpercaya.</p>
+		<p><b style="font-size: large;">MISI</b><br>1. Meningkatkan kualitas pengelolaan zakat, infaq dan sodaqoh yang amanah, profesional, dan transparan.<br> 2. Meningkatkan pendayagunaan Zakat, Infaq dan Sedekah (ZIS) yang kreatif, inovatif, dan produktif.<br> 3. Meningkatkan pelayanan donatur.</p>
+		<p><b style="font-size: large;">PRINSIP</b><br>Pengelolaan Zakat, Infak, Sedekah dan Dana Kemanusiaan (ZISKA) berprinsip:</p>
+		<p>1. <b>Syariat Islam</b>, artinya dalam menjalankan tugas dan fungsinya, harus berpedoman sesuai syariat Islam, mulai dari tata cara perekrutan pegawai hingga tata cara pendistribusian Zakat, Infak, Sedekah dan Dana Kemanusiaan (ZISKA);<br>
+			2. <b>Amanah dan integritas</b>, artinya harus menjadi lembaga yang dapat dipercaya, dengan memegang teguh kode etik dan prinsip-prinsip moral;<br>
+			3. <b>Kemanfaatan</b>, artinya memberikan manfaat yang besar bagi mustahik;<br>
+			4. <b>Keadilan</b>, artinya mampu bertindak adil, yakni sikap memperlakukan secara setara di dalam memenuhi hak-hak yang timbul berdasarkan perjanjian serta peraturan perundangan yang berlaku;<br>
+			5. <b>Kepastian hukum</b>, artinya muzaki dan mustahik harus memiliki jaminan dan kepastian hukum dalam proses pengelolaan dana Zakat, Infak, Sedekah dan Dana Kemanusiaan (ZISKA);<br>
+			6. <b>Akuntabilitas</b>, artinya pengelolaan dana Zakat, Infak, Sedekah dan Dana Kemanusiaan (ZISKA) harus bisa dipertanggungjawabkan kepada masyarakat dan mudah diakses oleh masyarakat dan pihak lain yang berkepentingan;<br>
+			7. <b>Profesional</b>, artinya perilaku yang selalu mengedepankan sikap dan Tindakan yang dilandasi oleh tingkat kompetensi, kredibilitas dan komitmen yang tinggi;<br>
+			8. <b>Transparansi</b>, artinya tindakan menyampaikan informasi secara transparan, konsisten, dan kredibel untuk memberikan layanan yang lebih baik dan lebih cepat kepada pemangku kepentingan;<br>
+			9. <b>Sinergi</b>, artinya sikap membangun dan memastikan hubungan kerja sama internal yang produktif serta kemitraan yang harmonis dengan para pemangku kepentingan dana ZISKA untuk menghasilkan karya yang bermanfaat dan berkualitas;<br>
+			10. <b>Berkemajuan</b>, artinya melakukan sesuatu secara baik dan benar yang berorientasi ke depan.</p>
+		<p><b  style="font-size: large;">TUJUAN</b><br> Pengelolaan dana Zakat, Infak, Sedekah dan Dana Kemanusiaan (ZISKA) bertujuan:</p>
+		<p>1. Meningkatkan efektivitas dan efisiensi pelayanan dalam pengelolaan dana Zakat, Infak, Sedekah dan Dana Kemanusiaan (ZISKA) dalam rangka mencapai maksud dan tujuan Persyarikatan;<br>
+			2. Meningkatkan manfaat dana Zakat, Infak, Sedekah dan Dana Kemanusiaan (ZISKA) untuk mewujudkan kesejahteraan masyarakat dan penanggulangan kemiskinan dalam rangka mencapai maksud dan tujuan Persyarikatan;<br>
+			3. Meningkatkan kemampuan ekonomi umat melalui pemberdayaan usaha-usaha produktif.</p>
+			<div class="banner">
+				<img src="./images/LAZISMU BAWAH.png" alt="Banner Image" class="lazismu-image">
+			</div>
+		</div>
+	  </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lazizmu Lumajang</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            touch-action: manipulation;
+        }
+
+        .white-space {
+            height: 65px;
+            width: auto;
+            background-color: #ffffff;
+        }
+
+        .navbar {
+            background-color: #150327;
+            padding: 15px;
+            box-shadow: 0 4px 6px #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .navbar-buttons {
+            margin-left: auto;
+        }
+
+        .navbar-buttons button,
+        .navbar-buttons a {
+            margin-left: 10px;
+            background-color: #150327;
+            border-radius: 2cm;
+            border-style: double;
+            border-color: bisque;
+        }
+
+        .menu-top {
+            background-image: url(./images/LAZISMU\ BAWAH.png);
+            background-color: rgba(250, 255, 221, 0.797);
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+            color: #ffffff;
+        }
+
+        .menu-top a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: auto;
+        }
+
+        #sidebarCollapse {
+            margin-right: 18px;
+        }
+
+        #content {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(to right, rgba(250, 255, 221, 0.797), #fecfef);
+        }
+
+        .logo img {
+            width: 100px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        p {
+            color: black;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .counters-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .counter {
+            text-align: center;
+            margin: 20px auto;
+            margin: 20px;
+            font-size: 24px;
+            flex: 1;
+            max-width: 300px;
+        }
+
+        .counter-number {
+            font-weight: bold;
+        }
+
+        .counter-title {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #000000;
+        }
+
+        .swiper-pagination {
+            position: absolute;
+            bottom: 20px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        
+        .swiper-pagination-bullet {
+            width: 8px;
+            height: 8px;
+            background-color: #000000;
+            opacity: 0.7;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+        }
+
+        .lazismu-image {
+            max-width: 100%; /* Gambar tidak boleh melebihi lebar container */
+            height: auto; /* Menyesuaikan tinggi sesuai aspek rasio gambar */
+            display: block; /* Menghindari margin bawah pada elemen inline */
+        }
+
+        .news-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .news-container img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        
+        .news-container h3 {
+            color: #000000;
+        }
+        
+        .read-more-btn {
+            display: inline-flexbox;
+            padding: 5px 20px;
+            background-color: #a13dff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+            text-align: center;
+            align-items: center;
+        }
+        
+        .read-more-btn:hover {
+            background-color: rgb(255, 247, 30);
+        }
+
+        /* Menambahkan styling untuk grid gambar berita */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Membagi div menjadi 3 kolom dengan lebar yang sama */
+            gap: 20px; /* Jarak antar kolom */
+            margin-top: 30px;
+        }
+
+        .news-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .news-content {
+            padding: 15px;
+            position: absolute;
+            bottom: 0; /* Sesuaikan dengan preferensi Anda */
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.616); /* Warna latar belakang untuk memastikan teks terlihat */
+            padding: 4px;
+            box-sizing: border-box;
+            transition: background 0.3s; /* Efek transisi untuk perubahan warna latar belakang */
+            z-index: 2;
+        }
+
+        .news-content h3 {
+            font-size: 14px;
+        }
+
+        .read-more {
+            display: block;
+            margin-top: 10px; 
+            padding: 6px;
+            background-color: #3498db;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        
+        .read-more:hover {
+            background-color: #ffffff;
+        }
+
+        /* Tampilan responsif untuk Android */
+@media only screen and (max-width: 600px) {
+    .news-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px; /* Tambahkan margin agar tidak rapat antar berita */
+    }
+
+    .news-content {
+        position: static;
+        width: auto;
+        background: none;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .news-content h3 {
+        font-size: 13px;
+        margin-bottom: 2%; /* Tambahkan margin agar tidak rapat dengan link */
+    }
+
+    .read-more {
+        display: contents;
+        text-align: center;
+        color: #ff0000;
+        text-decoration: none;
+        margin-top: auto;
+        font-size: 10px;
+        transition: background-color 0.3s ease;
+    }
+
+    .read-more:hover {
+        background-color: transparent;
+    }
+}
+        /* Add more styling as needed */
+
+    </style>
+</head>
+
+<body>
+
+    <div class="menu-top">
+        <div class="custom-menu">
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                <i class="fa fa-bars"></i>
+                <span class="sr-only">Toggle Menu</span>
+            </button>
+        </div>
+        <h1><a href="index.html" class="logo">
+                <img src="https://lazismulumajang.org/wp-content/uploads/2021/07/lembaga-amil-zakat-infaq-infak-dan-sedekah-sadaqah-muhammadiyah-lumajang-logo-header4.png"
+                    alt="LUMAJANG"></a></h1>
+    </div>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./images/apel-ambulan.jpg" alt="Gambar 1">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/lazizmu2.jpg" alt="Gambar 2">
+            </div>
+            <div class="swiper-slide">
+                <a href="qrkodedonasi.html">
+                    <img src="./images/lazizmu3.jpg" alt="Gambar 3">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/lazismu4.jpg" alt="Gambar 3">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/lazismu5.jpg" alt="Gambar 3">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/lazismu6.jpg" alt="Gambar 3">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/lazismu7.jpg" alt="Gambar 3">
+            </div>
+            <!-- Tambahkan gambar selanjutnya sesuai kebutuhan -->
+        </div>
+        <!-- Tombol navigasi -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="counters-container">
+        <div class="counter" data-duration="2000" data-to-value="35" data-from-value="0">
+            <span class="counter-number-prefix"></span>
+            <span class="counter-number">0</span>
+            <span class="counter-number-suffix"></span>
+            <div class="counter-title">Jumlah Program</div>
+        </div>
+
+        <div class="counter" data-duration="2000" data-to-value="1732647937" data-from-value="0" data-delimiter=".">
+            <span class="counter-number-prefix">Rp</span>
+            <span class="counter-number">0</span>
+            <span class="counter-number-suffix"></span>
+            <div class="counter-title">Total Dana Tersalurkan</div>
+        </div>
+
+        <div class="counter" data-duration="2000" data-to-value="2058" data-from-value="0">
+            <span class="counter-number-prefix"></span>
+            <span class="counter-number">0</span>
+            <span class="counter-number-suffix"></span>
+            <div class="counter-title">Donatur Terdaftar</div>
+        </div>
+    </div>
+
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="custom-menu">
+            </div>
+            <div class="p-4 pt-5">
+                <h1><a href="index.html" class="logo" style="font-size: xx-large;"><img src="" alt="">LAZISMU
+                        LUMAJANG</a></h1>
+                <ul class="list-unstyled components mb-5">
+                    <li class="active">
+                        <a href="beranda.html">Beranda</a>
+                        <a href="#tentangkamiSubmenu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle"> Tentang Kami</a>
+                        <ul class="collapse list-unstyled" id="tentangkamiSubmenu">
+                            <li>
+                                <a href="profil_lembaga.html">Profil Lembaga</a>
+                            </li>
+                            <li>
+                                <a href="visi_misi.html">Visi & Misi</a>
+                            </li>
+                            <li>
+                                <a href="struktur_manajemen.html">Struktur Manajemen</a>
+                            </li>
+                            <li>
+                                <a href="penghargaan.html">Penghargaan</a>
+                            </li>
+                            <li>
+                                <a href="kantor_layanan.html">Kantor Layanan</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="program.html">Program</a>
+                    </li>
+                    <li>
+                        <a href="#layananSubmenu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">Layanan</a>
+                        <ul class="collapse list-unstyled" id="layananSubmenu">
+                            <li>
+                                <a href="#">AmbulansMU</a>
+                            </li>
+                            <li>
+                                <a href="#">Jemput Donasi</a>
+                            </li>
+                            <li>
+                                <a href="#">Konfirmasi Donasi</a>
+                            </li>
+                            <li>
+                                <a href="#">Konsultasi Online</a>
+                            </li>
+                            <li>
+                                <a href="qrkodedonasi.html">QR Code Donasi</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Berita</a>
+                    </li>
+                    <li>
+                        <a href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="mb-5">
+                    <div class="social_media">
+                        <a href="https://www.facebook.com/lazismulumajangorg"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/LAZISMU"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/lazismulumajang"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights
+                        reserved | This template is made with <i class="icon-heart"
+                            aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
+        </nav>
+
+        <div id="content" class="p-4 p-md-5 pt-5">
+
+            <!-- Berita Baru -->
+        <div class="news-container">
+            <h2 class="mb-4">Berita Terbaru</h2>
+
+            <!-- Grid Gambar Berita -->
+        <div class="news-grid">
+            <div class="news-item">
+                <img src="./images/berita 1.jpg" alt="Berita 1">
+                <div class="news-content">
+                    <h3>Senyum Bahagia Pak Safi’i, Menempati Rumah Mungil dari Lazismu</h3>
+                    <a href="berita1.html" class="read-more">Baca Selengkapnya »</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <img src="./images/berita 2.jpeg" alt="Berita 2">
+                <div class="news-content">
+                    <h3>Lazismu Turut Serta Bangun dan Resmikan Beberapa Musholla yang Terdampak Gempa Bumi di Halimo Lumajang</h3>
+                    <a href="berita2.html" class="read-more">Baca Selengkapnya »</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <img src="./images/berita 3.jpeg" alt="Berita 3">
+                <div class="news-content">
+                    <h3>Lazismu Siapkan Kru dan Personel Ambulan se-Jatim Untuk Apel Siaga dan Bimtek Kedaruratan dan Kebencanaan</h3>
+                    <a href="berita3.html" class="read-more">Baca Selengkapnya »</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <img src="./images/berita 4.jpeg" alt="Berita 3">
+                <div class="news-content">
+                    <h3>Kantor Layanan Lazismu Pasirian Peduli Warga Isoman</h3>
+                    <a href="berita4.html" class="read-more">Baca Selengkapnya »</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <img src="./images/berita 5.jpeg" alt="Berita 3">
+                <div class="news-content">
+                    <h3>Lazismu Lumajang Gandeng PKK Tebar 28 Paket Sembako</h3>
+                    <a href="berita5.html" class="read-more">Baca Selengkapnya »</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <img src="./images/berita 6.jpeg" alt="Berita 3">
+                <div class="news-content">
+                    <h3>Selama Masa PPKM Lazismu se-Jatim Tebar 11 Ribu Paket Bantuan Untuk Warga Isoman</h3>
+                    <a href="berita6.html" class="read-more">Baca Selengkapnya »</a>
+                </div>
+            </div>
+        </div>
+        <div><a href="berita.html" class="read-more-btn">Berita Lainnya</a></div>
+        </div>
+
+
+            <h2 class="mb-4"></h2>
+            <p></p>
+            <p></p>
+            
+                <div class="banner">
+                    <img src="./images/LAZISMU BAWAH.png" alt="Banner Image" class="lazismu-image">
+                </div>
+
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="counter.widget.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+            },
+        });
+        
+    </script>
+
+</body>
+
+</html>

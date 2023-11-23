@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>Sidebar 02</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <style>
+         body {
+         font-family: 'Poppins', sans-serif;
+         overflow-x: hidden;
+         margin: 0;
+         padding: 0;
+         }
+         .banner-container {
+         overflow: hidden;
+         }
+         .banner {
+         width: auto;
+         height: auto;
+         display:block;
+         }
+         .white-space {
+         height: 65px;
+         width: auto;
+         background-color: #ffffff;
+         }
+         .navbar {
+         background-color: #150327;
+         padding: 15px;
+         box-shadow: 0 4px 6px #ffffff;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         position: relative;
+         z-index: 1;
+         }
+         .navbar-buttons {
+         margin-left: auto;
+         }
+         .navbar-buttons button,
+         .navbar-buttons a {
+         margin-left: 10px;
+         background-color: #150327;
+         border-radius: 2cm;
+         border-style: double;
+         border-color: bisque;
+         }
+         .menu-top {
+         background-image: url(./images/LAZISMU\ BAWAH.png);
+         background-color: rgba(250, 255, 221, 0.797);
+         background-size: auto;
+         background-repeat: no-repeat;
+         background-position: center;
+         padding: 15px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         position: relative;
+         z-index: 2;
+         color: #ffffff;
+         }
+         .menu-top a {
+         color: #ffffff;
+         text-decoration: none;
+         margin: auto;
+         }
+         #sidebarCollapse {
+         margin-right: 18px;
+         }
+         #content {
+         width: 100%;
+         padding: 15px;
+         background: linear-gradient(to right, rgba(250, 255, 221, 0.797), #fecfef);
+         }
+         .logo img {
+         width: 100px;
+         height: auto;
+         margin-right: 10px;
+         }
+         p {
+         color: black;
+         }
+         /* Add more styling as needed */
+      </style>
+   </head>
+   <body>
+      <div class="menu-top">
+         <div class="custom-menu">
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Toggle Menu</span>
+            </button>
+         </div>
+         <h1><a href="index.html" class="logo">
+            <img src="https://lazismulumajang.org/wp-content/uploads/2021/07/lembaga-amil-zakat-infaq-infak-dan-sedekah-sadaqah-muhammadiyah-lumajang-logo-header4.png" alt="LUMAJANG"></a>
+         </h1>
+      </div>
+      <div class="wrapper d-flex align-items-stretch">
+         <nav id="sidebar">
+            <div class="custom-menu">
+            </div>
+            <div class="p-4 pt-5">
+               <h1><a href="index.html" class="logo" style="font-size: xx-large;"><img src="" alt="">LAZISMU LUMAJANG</a></h1>
+               <ul class="list-unstyled components mb-5">
+                  <li class="active">
+                     <a href="beranda.html">Beranda</a>
+                     <a href="#tentangkamiSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Tentang Kami</a>
+                     <ul class="collapse list-unstyled" id="tentangkamiSubmenu">
+                        <li>
+                           <a href="profil_lembaga.html">Profil Lembaga</a>
+                        </li>
+                        <li>
+                           <a href="visi_misi.html">Visi & Misi</a>
+                        </li>
+                        <li>
+                           <a href="struktur_manajemen.html">Struktur Manajemen</a>
+                        </li>
+                        <li>
+                           <a href="penghargaan.html">Penghargaan</a>
+                        </li>
+                        <li>
+                           <a href="kantor_layanan.html">Kantor Layanan</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="program.html">Program</a>
+                  </li>
+                  <li>
+                     <a href="#layananSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Layanan</a>
+                     <ul class="collapse list-unstyled" id="layananSubmenu">
+                        <li>
+                           <a href="#">AmbulansMU</a>
+                        </li>
+                        <li>
+                           <a href="#">Jemput Donasi</a>
+                        </li>
+                        <li>
+                           <a href="#">Konfirmasi Donasi</a>
+                        </li>
+                        <li>
+                           <a href="#">Konsultasi Online</a>
+                        </li>
+                        <li>
+                           <a href="qrkodedonasi.html">QR Code Donasi</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#">Berita</a>
+                  </li>
+                  </li>
+                  <li>
+                     <a href="Contact.html">Contact</a>
+                  </li>
+               </ul>
+               <div class="mb-5">
+                  <div class="social_media">
+                     <a href="https://www.facebook.com/lazismulumajangorg"><i class="fab fa-facebook-f"></i></a>
+                     <a href="https://twitter.com/LAZISMU"><i class="fab fa-twitter"></i></a>
+                     <a href="https://www.instagram.com/lazismulumajang"><i class="fab fa-instagram"></i></a>
+                  </div>
+               </div>
+               <div class="footer">
+                  <p>
+                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                     Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  </p>
+               </div>
+            </div>
+         </nav>
+         <!-- Page Content  -->
+         <div id="content" class="site-content">
+            <div class="ast-container">
+               <main id="main" class="site-main">
+                  <div class="elementor elementor-15261 elementor-location-single post-7020 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized ast-article-single" data-elementor-post-type="elementor_library">
+                     <div class="elementor-element elementor-element-2749be5f e-flex e-con-boxed e-con e-parent" data-id="2749be5f" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+                        <div class="e-con-inner">
+                           <div class="elementor-element elementor-element-305b81d4 elementor-widget elementor-widget-theme-post-title">
+                              <h1 class="elementor-heading-title">
+                                 <center>Senyum Bahagia Pak Safi&#8217;i, Menempati Rumah Mungil dari Lazismu</center>
+                              </h1>
+                           </div>
+                           <div class="elementor-element elementor-element-7e3d9d31 elementor-align-center elementor-widget elementor-widget-post-info">
+                              <ul class="elementor-inline-items elementor-post-info">
+                                 <!-- post info -->  
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="elementor-element elementor-element-40644db8 e-flex e-con-boxed e-con e-parent">
+                        <div class="elementor-element elementor-element-6e02a658 elementor-widget elementor-widget-theme-post-featured-image">
+                           <img class="responsive" src="images/berita/berita 1/berita1.jpg" alt="Senyum Bahagia Pak Safi’i">
+                        </div>
+                        <div class="elementor-widget-container">
+                           <p><strong><a href="https://lazismulumajang.org/" target="_blank" rel="noopener noreferrer">lazismulumajang.org</a></strong> – Lazismu Lumajang terus menyalurkan dana zakat, infaq dan sedekah kepada umat. Seperti yang dilakukan pada hari Kamis (14-10-2021) mengadakan bedah rumah milik Pak Safi’i warga Desa Tempeh Lor, tepatnya di Dusun Tulus Rejo Dua, Lumajang.</p>
+                           <p>Awalnya info keberadaan rumah Pak Safi’i yang tidak layak tersebut disampaikan oleh seorang donatur, yang melaporkan ke kantor Lazismu Lumajang.</p>
+                           <p>“Selang beberapa hari kemudian tim Lazismu mengadakan survey,”</p>
+                           <p>“Dari hasil survey kondisi rumah Pak Safi’i diketahui sangat memprihatinkan. Atapnya bocor, dinding kayunya sudah dimakan usia. Sementara tidurnya beralaskan kasur yang sudah lapuk di atas tanah. Kami tidak bisa membayangkan betapa dinginnya malam hari karena angin ataupun tetesan air hujan ketika atap bocor,”</p>
+                           <p>Dan ternyata tanah yang di tempati Pak Safi’i bukan milik sendiri.</p>
+                           <p>Koordinasi antara <a href="https://g.page/lazismulumajang?share">Lazismu Lumajang</a> dengan pihak Pemerintah Desa Tempeh Lor  yang diwakili Kepala Dusun untuk melobi  pemilik tanah, untuk  didirikan hunian yang layak. Alhamdulillah diperbolehkan dengan syarat bangunannya tidak permanen.</p>
+                           <p><a href="https://instagram.com/lazismulumajang?utm_medium=copy_link">Lazismu Lumajang</a> langsung bergerak untuk membantu merenovasi  rumah tersebut, dan dibantu oleh banyaknya dukungan masyarakat yang dikoordinir oleh kepala Dusun.</p>
+                           <p>Warga sangat antusias dan kompak membantu, baik bapak-bapak sampai ibu-ibu PKK yang membantu memasakkan untuk konsumsi  tukang.</p>
+                           <p>Semoga Pak Safi’i nyaman dengan rumah barunya yang insya Allah layak huni, tidak bocor dan hangat tentunya.</p>
+                           <p>“Terimakasih kepada para donatur atas keabaikan hati  dan sumbangsih dana sehingga renovasi rumah Pak Safi’i bisa direalisasikan lebih cepat dari perkiraan. Mudah-mudahan mejadi amal yang barokah untuk para muzaki,” ujar <a href="https://instagram.com/romi_asb?utm_medium=copy_link">Said Romdhon</a> selaku Ketua Lazismu Lumajang.</p>
+                           <p><img decoding="async" class="responsive" src="images/berita/berita 1/berita2.jpg" alt="" width="1680" height="400" srcset="https://lazismulumajang.org/wp-content/uploads/2021/07/REKENING-WEB-BARU.jpg 1680w, https://lazismulumajang.org/wp-content/uploads/2021/07/REKENING-WEB-BARU-300x71.jpg 300w, https://lazismulumajang.org/wp-content/uploads/2021/07/REKENING-WEB-BARU-1024x244.jpg 1024w, https://lazismulumajang.org/wp-content/uploads/2021/07/REKENING-WEB-BARU-768x183.jpg 768w, https://lazismulumajang.org/wp-content/uploads/2021/07/REKENING-WEB-BARU-1536x366.jpg 1536w" sizes="(max-width: 1680px) 100vw, 1680px" /></p>
+                           <p>“Kami sadar masih banyak rumah yang kurang layak  dan kami berharap para donatur mendukung program ini sehingga bisa merealisasikan rumah layak huni untuk warga yang membutuhkan. Bismillah semoga selalu tebar manfaat bagi umat,” pungkasnya</p>
+                           <p>Hal senada juga disampaikan oleh Hafied Susanto, Kepala Dusun Tulus Rejo Dua. Rasa syukur dan ucapan terima kasih kepada Lazismu Lumajang  dan para donatur yang selalu gerak cepat ketika umat membutuhkan, ujarnya</p>
+                           <p>Dan hari ini telah memberikan tempat tinggal yang layak terhadap warga kami yang bernama Pak Safi’i.  Dia hidup sendiri dan penglihatannya sudah sangat terbatas.</p>
+                           <p>“Berkat sinergi yang baik antara kami selaku kepala Dusun dan <a href="https://www.facebook.com/lazismulumajangorg/">Lazismu Lumajang</a> semua itu bisa diperbaiki. Mudah-mudahan apa yang diberikan berkah dan manfaat bagi Pak Safi’i dan tim Lazismu Lumajang selalu sehat sehingga bisa menolong warga yang membutuhkan,“ ujarnya.</p>
+                           <p>Dia berharap sinergi ini tidak hanya berhenti di sini. Kedepan bisa berlanjut dengan program program lainya. Mengingat warga kami yang membutuhkan juga masih ada, ujar Hafied.</p>
+                           <p><img decoding="async" loading="lazy" class="responsive" src="images/berita/berita 1/berita3.jpeg" alt="" width="1600" height="1201" srcset="https://lazismulumajang.org/wp-content/uploads/2021/10/b.jpeg 1600w, https://lazismulumajang.org/wp-content/uploads/2021/10/b-300x225.jpeg 300w, https://lazismulumajang.org/wp-content/uploads/2021/10/b-1024x769.jpeg 1024w, https://lazismulumajang.org/wp-content/uploads/2021/10/b-768x576.jpeg 768w, https://lazismulumajang.org/wp-content/uploads/2021/10/b-1536x1153.jpeg 1536w" sizes="(max-width: 1600px) 100vw, 1600px" /></p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="elementor-element elementor-element-62be097f elementor-widget elementor-widget-theme-post-content">
+                     <div class="elementor-widget-container">
+                        <section class="elementor-section elementor-top-section">
+                           <!-- post content -->
+                        </section>
+                     </div>
+                  </div>
+            </div>
+            </main>
+         </div>
+      </div>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>

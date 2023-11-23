@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>Sidebar 02</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <style>
+         body {
+         font-family: 'Poppins', sans-serif;
+         overflow-x: hidden;
+         margin: 0;
+         padding: 0;
+         }
+         .banner-container {
+         overflow: hidden;
+         }
+         .banner {
+         width: auto;
+         height: auto;
+         display:block;
+         }
+         .white-space {
+         height: 65px;
+         width: auto;
+         background-color: #ffffff;
+         }
+         .navbar {
+         background-color: #150327;
+         padding: 15px;
+         box-shadow: 0 4px 6px #ffffff;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         position: relative;
+         z-index: 1;
+         }
+         .navbar-buttons {
+         margin-left: auto;
+         }
+         .navbar-buttons button,
+         .navbar-buttons a {
+         margin-left: 10px;
+         background-color: #150327;
+         border-radius: 2cm;
+         border-style: double;
+         border-color: bisque;
+         }
+         .menu-top {
+         background-image: url(./images/LAZISMU\ BAWAH.png);
+         background-color: rgba(250, 255, 221, 0.797);
+         background-size: auto;
+         background-repeat: no-repeat;
+         background-position: center;
+         padding: 15px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         position: relative;
+         z-index: 2;
+         color: #ffffff;
+         }
+         .menu-top a {
+         color: #ffffff;
+         text-decoration: none;
+         margin: auto;
+         }
+         #sidebarCollapse {
+         margin-right: 18px;
+         }
+         #content {
+         width: 100%;
+         padding: 15px;
+         background: linear-gradient(to right, rgba(250, 255, 221, 0.797), #fecfef);
+         }
+         .logo img {
+         width: 100px;
+         height: auto;
+         margin-right: 10px;
+         }
+         p {
+         color: black;
+         }
+         /* Add more styling as needed */
+      </style>
+   </head>
+   <body>
+      <div class="menu-top">
+         <div class="custom-menu">
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Toggle Menu</span>
+            </button>
+         </div>
+         <h1><a href="index.html" class="logo">
+            <img src="https://lazismulumajang.org/wp-content/uploads/2021/07/lembaga-amil-zakat-infaq-infak-dan-sedekah-sadaqah-muhammadiyah-lumajang-logo-header4.png" alt="LUMAJANG"></a>
+         </h1>
+      </div>
+      <div class="wrapper d-flex align-items-stretch">
+      <nav id="sidebar">
+         <div class="custom-menu">
+         </div>
+         <div class="p-4 pt-5">
+            <h1><a href="index.html" class="logo" style="font-size: xx-large;"><img src="" alt="">LAZISMU LUMAJANG</a></h1>
+            <ul class="list-unstyled components mb-5">
+               <li class="active">
+                  <a href="beranda.html">Beranda</a>
+                  <a href="#tentangkamiSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Tentang Kami</a>
+                  <ul class="collapse list-unstyled" id="tentangkamiSubmenu">
+                     <li>
+                        <a href="profil_lembaga.html">Profil Lembaga</a>
+                     </li>
+                     <li>
+                        <a href="visi_misi.html">Visi & Misi</a>
+                     </li>
+                     <li>
+                        <a href="struktur_manajemen.html">Struktur Manajemen</a>
+                     </li>
+                     <li>
+                        <a href="penghargaan.html">Penghargaan</a>
+                     </li>
+                     <li>
+                        <a href="kantor_layanan.html">Kantor Layanan</a>
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="program.html">Program</a>
+               </li>
+               <li>
+                  <a href="#layananSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Layanan</a>
+                  <ul class="collapse list-unstyled" id="layananSubmenu">
+                     <li>
+                        <a href="#">AmbulansMU</a>
+                     </li>
+                     <li>
+                        <a href="#">Jemput Donasi</a>
+                     </li>
+                     <li>
+                        <a href="#">Konfirmasi Donasi</a>
+                     </li>
+                     <li>
+                        <a href="#">Konsultasi Online</a>
+                     </li>
+                     <li>
+                        <a href="qrkodedonasi.html">QR Code Donasi</a>
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">Berita</a>
+               </li>
+               </li>
+               <li>
+                  <a href="Contact.html">Contact</a>
+               </li>
+            </ul>
+            <div class="mb-5">
+               <div class="social_media">
+                  <a href="https://www.facebook.com/lazismulumajangorg"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/LAZISMU"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/lazismulumajang"><i class="fab fa-instagram"></i></a>
+               </div>
+            </div>
+            <div class="footer">
+               <p>
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+               </p>
+            </div>
+         </div>
+      </nav>
+      <!-- Page Content  -->
+      <div id="content" class="site-content">
+      <div class="ast-container">
+      <main id="main" class="site-main">
+      <div class="elementor elementor-15261 elementor-location-single post-7020 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized ast-article-single" data-elementor-post-type="elementor_library">
+      <div class="elementor-element elementor-element-2749be5f e-flex e-con-boxed e-con e-parent" data-id="2749be5f" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+      <div class="e-con-inner">
+      <div class="elementor-element elementor-element-305b81d4 elementor-widget elementor-widget-theme-post-title">
+         <h1 class="elementor-heading-title">
+            <center>
+               Lazismu Turut Serta Bangun dan Resmikan Beberapa Musholla yang Terdampak Gempa Bumi di Halimo Lumajang
+            </center>
+         </h1>
+         <div class="responsive"><img width="1052" height="780" src="images/berita/berita 2/berita1.jpeg" class="responsive" alt="Lazismu Turut Serta Bangun dan Resmikan Beberapa Musholla yang Terdampak Gempa Bumi di Halimo Lumajang" decoding="async" loading="lazy" srcset="https://lazismulumajang.org/wp-content/uploads/2021/09/4.jpeg 1052w, https://lazismulumajang.org/wp-content/uploads/2021/09/4-300x222.jpeg 300w, https://lazismulumajang.org/wp-content/uploads/2021/09/4-1024x759.jpeg 1024w, https://lazismulumajang.org/wp-content/uploads/2021/09/4-768x569.jpeg 768w" sizes="(max-width: 1052px) 100vw, 1052px" /></div>
+         </a>
+         <div class="elementor-post__text">
+            <div class="elementor-widget-container">
+               <p><strong><a href="https://lazismulumajang.org/" target="_blank" rel="noopener noreferrer">lazismulumajang.org</a></strong> – Masih segar dalam ingatan terkait gempa yang menerjang beberapa kawasan di Lumajang. Puluhan rumah, fasilitas umum, dan masjid rusak porak-poranda.</p>
+               <p>Hal itu yang menyebabkan banyak masyarakat kehilangan harta benda. Beberapa masyarakat juga belum bisa beribadah di Musholla seperti sebelumnya.</p>
+               <p>Mengetahui hal tersebut, Forum Organisasi Zakat (FOZ) Jawa Timur, termasuk Lazismu didalamnya, bersama Bupati Lumajang membangun kembali dua bangunan tempat ibadah sekaligus meresmikan pembangunan bersama warga dua desa di Lumajang, Jatim, setelah direnovasi total karena gempa pada April lalu, Sabtu (25/9).</p>
+               <p>Dua unit bangunan itu adalah musholla Darussalam di Desa Kaliuling dan musholla Amanah FOZ di Desa Kalirejo, Kecamatan Tempursari.</p>
+               <p>Pembangunan dua musholla itu menghabiskan dana Rp 105 juta lebih, yang diperoleh dari donasi masyarakat yang dihimpun 24 organisasi lembaga pengelola zakat anggota FOZ Jatim.</p>
+               <p>Ketua FOZ Jatim Kholaf Hibatullah mengatakan, pembangunan dua musholla itu merupakan hasil gotong royong bersama anggota FOZ yang menghimpun donasi dari masyarakat pasca gempa yang terjadi pada April lalu.</p>
+               <p>“Ini bagian dari sinergi kami dalam mendukung pemulihan pasca gempa, selain bantuan tanggap darurat saat terjadi bencana kemarin,” kata Kholaf saat meresmikan bersama Bupati Lumajang di lokasi, Sabtu (25/9/21).</p>
+               <p>Kholaf menjelaskan, sebelum dibangun seperti sekarang, kondisi dua musholla tersebut rusak 85 persen akibat goncangan gempa. Sehingga kondisinya hampir rata dengan tanah.</p>
+               <p>24 lembaga amil zakat yang bersinergi itu antara lain Sahabat Mustahiq, Laz Sidogiri, Taman Zakat, Saku Yatim, LMI, Lazismu, Nurul Hayat, BMH, Yatim Mandiri dan Lazisnu. Selain itu, juga ada Baznas Lumajang, YDSF, Bina Mulia, Dompet Quran, Rumah Zakat, Laz Al Azhar, Laznas Dewan Da’wah, Dompet Dhuafa, Laz DAU juga Laz Nurul Fikri serta beberapa lembaga lainnya.</p>
+               <p>Bupati Lumajang, Thoriqul Haq saat meresmikan bantuan mengatakan agar musholla dimanfaatkan dan dimakmurkan dengan kegiatan bersama warga.</p>
+               <p>“Matur suwun FOZ Jatim yang telah menginisiasi bantuan ini dan kepedulian bersama untuk membantu warga terdampak gempa. Ini sinergi yang luar biasa,” kata Bupati Thoriqul Haq.</p>
+               <p>Pada kesempatan itu juga diserahkan 403 paket sembako untuk masyarakat dhuafa dan santunan anak yatim.</p>
+               <p>Sementara itu drh Zainul Muslimin, Ketua Lazismu Jawa Timur, menyatakan bahwa sudah menjadi tugas Lazismu untuk bisa berkolaborasi dengan LAZ dan berbagai pihak untuk menebar kebaikan dan kebermanfataan kepada sesama.</p>
+               <p>“Maaf saya tidak bisa hadir karena bersamaan dengan kegiatan Pelatihan BankZiska Lazismu di Gontor, Ponorogo. Namun saya sudah mewakilkan ke perwakilan daerah Lazismu yang ada di Lumajang. Saya menyampaikan selamat dan sukses atas peresmian beberapa Musholla di desa Halimo Lumajang oleh gabungan organisasi pengelola Zakat dan Lembaga Amil Zakat yang tergabung dalam FOZ, termasuk Lazismu di dalamnya. Sebenarnya Lazismu juga mempunyai proyek serupa, yakni sedang membangun Masjid Muhammadiyah di Halimo yang juga terdampak gempa,” jelas Zainul.</p>
+               <p>“Sudah menjadi tugas Lazismu untuk bisa berkolaborasi dengan LAZ lain yang tergabung dalam FOZ dan berbagai pihak untuk menebar kebaikan dan kebermanfataan kepada sesama. Saya berharap semoga kedua Musholla tersebut dapat dimanfaatkan untuk kepentingan ibadah dan dakwah bagi ummat Islam dan masyarakat sekitar” harap Zainul Muslimin ketika di sela-sela acara pelatihan pengelola BankZiska di Ponorogo.</p>
+               <p><img decoding="async" class="responsive" src="images/berita/berita 1/berita2.jpg" alt="" width="1680" height="400" srcset="https://lazismulumajang.org/wp-content/uploads/2021/07/REKENING-WEB-BARU.jpg 1680w, https://lazismulumajang.org/wp-content/uploads/2021/07/REKENING-WEB-BARU-300x71.jpg 300w, https://lazismulumajang.org/wp-content/uploads/2021/07/REKENING-WEB-BARU-1024x244.jpg 1024w, https://lazismulumajang.org/wp-content/uploads/2021/07/REKENING-WEB-BARU-768x183.jpg 768w, https://lazismulumajang.org/wp-content/uploads/2021/07/REKENING-WEB-BARU-1536x366.jpg 1536w" sizes="(max-width: 1680px) 100vw, 1680px" /></p>
+               <p><b>Sambutan Bupati Lumajang.</b></p>
+               <p>Bupati Lumajang, Thoriqul Haq yang meresmikan Mushola Darussalam, bertempat di Dusun Halimo, Desa Kaliuling, Kecamatan Tempursari, Sabtu (25/09/21), memberikn sambutnnya.</p>
+               <p>Dalam sambutannya, bupati mengapresiasi Forum Zakat Provinsi Jawa Timur, termasuk Lazismu di dalamnya, yang telah ikut berpastisipasi dalam pembangunan mushola tersebut hingga selesai. Harapannya dengan adanya mushola yang telah dibangun kembali ini, selain digunakan untuk beribadah, Mushola Darussalam juga digunakan untuk melaksanakan kegiatan keagaaman lainnya.</p>
+               <p>“Saya mengucapkan terimakasih kepada Forum Zakat Jawa Timur yang membangun mushola ini, untuk digunakan kembali oleh masyarakat Desa Kaliuling khususnya di Dusun Halimo,” ujarnya.</p>
+               <p>Pada kesempatan itu, bupati juga menyampaikan terkait perkembangan bantuan pembangunan rumah bagi korban gempa bumi yang terjadi beberapa bulan yang lalu. Ia mengungkapkan bahwa Pemerintah Kabupaten Lumajang terus berupaya untuk melakukan koordinasi dengan Pemerintah Pusat agar bantuan pembangunan rumah bagi korban bencana yang mengalami kerusakan berat dapat terwujud, sebab hingga saat ini bantuan dari BNPB masih belum terrealisasi.</p>
+               <p>“Saya terus berikhtiar agar supaya anggaran dari Pemerintah Pusat bisa segera turun dan masyarakat bisa membangun rumah kembali,” ujarnya.</p>
+               <p>Bupati Lumajang juga berharap kepada masyarakat Dusun Halimo dan Dusun Iburaja, Desa Kaliuling yang terdampak bencana agar bersabar dan berdoa supaya bantuan tersebut segera terrealisasi sehingga masyarakat bisa membangun rumah yang layak huni serta bisa melaksanakan aktivitas normal kembali.</p>
+               <p>“Saya mohon doa kepada semua warga yang ada disini dan saya terus berikhtiar agar bantuan segera dicairkan,” ungkapnya.</p>
+               <p><img decoding="async" loading="lazy" class="responsive" src="images/berita/berita 2/berita 2.jpeg" alt="" width="1600" height="1201" sizes="(max-width: 1600px) 100vw, 1600px" /></p>
+               <p><img decoding="async" loading="lazy" class="responsive" src="images/berita/berita 2/berita3.jpeg" alt="" width="1600" height="1201" sizes="(max-width: 1600px) 100vw, 1600px" /></p>
+               <p><img decoding="async" loading="lazy" class="responsive" src="images/berita/berita 2/berita4.jpeg" alt="" width="1600" height="1201" sizes="(max-width: 1600px) 100vw, 1600px" /></p>
+            </div>
+         </div>
+      </div>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>

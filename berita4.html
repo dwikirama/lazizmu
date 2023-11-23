@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>Sidebar 02</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <style>
+         body {
+         font-family: 'Poppins', sans-serif;
+         overflow-x: hidden;
+         margin: 0;
+         padding: 0;
+         }
+         .banner-container {
+         overflow: hidden;
+         }
+         .banner {
+         width: auto;
+         height: auto;
+         display:block;
+         }
+         .white-space {
+         height: 65px;
+         width: auto;
+         background-color: #ffffff;
+         }
+         .navbar {
+         background-color: #150327;
+         padding: 15px;
+         box-shadow: 0 4px 6px #ffffff;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         position: relative;
+         z-index: 1;
+         }
+         .navbar-buttons {
+         margin-left: auto;
+         }
+         .navbar-buttons button,
+         .navbar-buttons a {
+         margin-left: 10px;
+         background-color: #150327;
+         border-radius: 2cm;
+         border-style: double;
+         border-color: bisque;
+         }
+         .menu-top {
+         background-image: url(./images/LAZISMU\ BAWAH.png);
+         background-color: rgba(250, 255, 221, 0.797);
+         background-size: auto;
+         background-repeat: no-repeat;
+         background-position: center;
+         padding: 15px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         position: relative;
+         z-index: 2;
+         color: #ffffff;
+         }
+         .menu-top a {
+         color: #ffffff;
+         text-decoration: none;
+         margin: auto;
+         }
+         #sidebarCollapse {
+         margin-right: 18px;
+         }
+         #content {
+         width: 100%;
+         padding: 15px;
+         background: linear-gradient(to right, rgba(250, 255, 221, 0.797), #fecfef);
+         }
+         .logo img {
+         width: 100px;
+         height: auto;
+         margin-right: 10px;
+         }
+         p {
+         color: black;
+         }
+         /* Add more styling as needed */
+      </style>
+   </head>
+   <body>
+      <div class="menu-top">
+         <div class="custom-menu">
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Toggle Menu</span>
+            </button>
+         </div>
+         <h1><a href="index.html" class="logo">
+            <img src="https://lazismulumajang.org/wp-content/uploads/2021/07/lembaga-amil-zakat-infaq-infak-dan-sedekah-sadaqah-muhammadiyah-lumajang-logo-header4.png" alt="LUMAJANG"></a>
+         </h1>
+      </div>
+      <div class="wrapper d-flex align-items-stretch">
+      <nav id="sidebar">
+         <div class="custom-menu">
+         </div>
+         <div class="p-4 pt-5">
+            <h1><a href="index.html" class="logo" style="font-size: xx-large;">LAZISMU LUMAJANG</a></h1>
+            <ul class="list-unstyled components mb-5">
+               <li class="active">
+                  <a href="beranda.html">Beranda</a>
+                  <a href="#tentangkamiSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Tentang Kami</a>
+                  <ul class="collapse list-unstyled" id="tentangkamiSubmenu">
+                     <li>
+                        <a href="profil_lembaga.html">Profil Lembaga</a>
+                     </li>
+                     <li>
+                        <a href="visi_misi.html">Visi & Misi</a>
+                     </li>
+                     <li>
+                        <a href="struktur_manajemen.html">Struktur Manajemen</a>
+                     </li>
+                     <li>
+                        <a href="penghargaan.html">Penghargaan</a>
+                     </li>
+                     <li>
+                        <a href="kantor_layanan.html">Kantor Layanan</a>
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="program.html">Program</a>
+               </li>
+               <li>
+                  <a href="#layananSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Layanan</a>
+                  <ul class="collapse list-unstyled" id="layananSubmenu">
+                     <li>
+                        <a href="#">AmbulansMU</a>
+                     </li>
+                     <li>
+                        <a href="#">Jemput Donasi</a>
+                     </li>
+                     <li>
+                        <a href="#">Konfirmasi Donasi</a>
+                     </li>
+                     <li>
+                        <a href="#">Konsultasi Online</a>
+                     </li>
+                     <li>
+                        <a href="qrkodedonasi.html">QR Code Donasi</a>
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">Berita</a>
+               </li>
+               <li>
+                  <a href="Contact.html">Contact</a>
+               </li>
+            </ul>
+            <div class="mb-5">
+               <div class="social_media">
+                  <a href="https://www.facebook.com/lazismulumajangorg"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/LAZISMU"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/lazismulumajang"><i class="fab fa-instagram"></i></a>
+               </div>
+            </div>
+            <div class="footer">
+               <p>
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+               </p>
+            </div>
+         </div>
+      </nav>
+      <!-- Page Content  -->
+      <div id="content" class="site-content">
+      <div class="ast-container">
+      <main id="main" class="site-main">
+      <div class="elementor elementor-15261 elementor-location-single post-7020 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized ast-article-single" data-elementor-post-type="elementor_library">
+      <div class="elementor-element elementor-element-2749be5f e-flex e-con-boxed e-con e-parent" data-id="2749be5f" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+      <div class="e-con-inner">
+      <div class="elementor-element elementor-element-305b81d4 elementor-widget elementor-widget-theme-post-title">
+         <h1 class="elementor-heading-title">
+            <center>
+                Kantor Layanan Lazismu Pasirian Peduli Warga Isoman
+            </center>
+         </h1>
+         <div class="responsive"><img width="1052" height="780" src="images/berita/berita 4/1.jpeg" class="responsive" alt="" decoding="async" loading="lazy" sizes="(max-width: 1052px) 100vw, 1052px"></div>
+         <div class="elementor-post__text">
+            <div class="elementor-widget-container">
+               <p><strong><a href="https://lazismulumajang.org/" target="_blank" rel="noopener noreferrer">lazismulumajang.org</a></strong> – Kantor Layanan Lazismu Pasirian peduli warga yang sedang melakukan isolasi mandiri (isoman) di wilayah Kecamatan Pasirian Kabupaten Lumajang, Rabu (25/8/2021).</p>
+               <p>Kegiatan ini diikuti oleh Kepala KUA Kecamatan Pasirian Ridwan SAg MAg, penghulu Mukhlas SAg dan Penyuluh Agama Islam Nanang Abdullatip SSos. Juga diikuti anggota Lazismu Pasirian yaitu Sochibul Huda dan Andi Yuli.</p>
+               <p>Kepala Kantor Layanan Lazismu (KLL) Pasirian Bekti Sawiji MPd menyampaikan pandemi Covid-19 yang tak kunjung berakhir telah menciptakan kesadaran kolektif. Kesadaran kolektif tersebut berupa solidaritas masyarakat terhadap sesama.</p>
+               <p><img decoding="async" loading="lazy" class="responsive" src="images/berita/berita 4/2.jpeg" alt="" width="1600" height="1201" sizes="(max-width: 1600px) 100vw, 1600px"></p>
+               <p>“Kegiatan ini bertujuan untuk meringankan beban warga isoman dalam memenuhi kebutuhan hidup sehari-hari. Bagi sebagian masyarakat, kondisi pandemi sudah membuat mereka menderita. Lebih-lebih bagi mereka yang sedang isoman. Seakan melengkapi penderitaan, saat isoman mereka terpaksa kehilangan penghasilan karena tidak bisa bekerja seperti biasa,” ungkapnya.</p>
+               <p><b>Bagi 15 Paket Sembako</b><br/>Dalam kegiatan peduli isoman ini, sambungnya, KUA Pasirian menjadi pendamping Lazismu dan untuk menyaksikan kegiatan. Sementara Lazismu Pasirian memberikan bantuan berupa 15 paket sembako.</p>
+               <p>“Paket sembako berisi minyak goreng, beras, gula dan susu. Sumber pendanaan yang digunakan untuk pengadaan paket bantuan tersebut dari kas KLL Pasirian dan Lazismu Lumajang,” jelasnya.</p>
+               <p>“Target awal kegiatan ini adalah seluruh warga isoman yang berada di wilayah Kecamatan Pasirian. Namun ada beberapa kendala yang terjadi pada saat kegiatan, sehingga hanya menyebar ke empat desa. Yaitu Desa Pasirian, Condro, Bago dan Gondoruso,” tambahnya.</p>
+               <p><img decoding="async" loading="lazy" class="responsive" src="images/berita/berita 4/3.jpeg" alt="" width="1600" height="1201" sizes="(max-width: 1600px) 100vw, 1600px"></p>
+               <p><b><h5>Siap Kelola Aksi Kemanusiaan</b></h5>Sementara itu Kepala KUA Kecamatan Pasirian Ridwan menyampaikan rasa terima kasihnya atas kepedulian Lazismu Pasirian.</p>
+               <p>“Terima kasih kepada semua pihak khususnya Lazismu Pasirian yang bersedia bekerja bersama dengan penyuluh Agama Islam untuk peduli terhadap warga yang sedang isoman,” ujarnya.</p>
+               <p><img decoding="async" class="responsive" src="images/berita/berita 1/berita2.jpg" alt="" width="1680" height="400" srcset="https://lazismulumajang.org/wp-content/uploads/2021/07/REKENING-WEB-BARU.jpg 1680w, https://lazismulumajang.org/wp-content/uploads/2021/07/REKENING-WEB-BARU-300x71.jpg 300w, https://lazismulumajang.org/wp-content/uploads/2021/07/REKENING-WEB-BARU-1024x244.jpg 1024w, https://lazismulumajang.org/wp-content/uploads/2021/07/REKENING-WEB-BARU-768x183.jpg 768w, https://lazismulumajang.org/wp-content/uploads/2021/07/REKENING-WEB-BARU-1536x366.jpg 1536w" sizes="(max-width: 1680px) 100vw, 1680px"></p>
+               <p>Bekti Sawiji berharap agar masyarakat semakin sadar akan kewajiban dan Lazismu akan siap untuk mengelola aksi-aksi kemanusiaan selanjutnya. .</p>
+               <p>“Lazismu siap untuk membantu masyarakat yang sedang isoman maupun pedagang kaki lima yang terkena dampak atau imbas Pemberlakuan Pembatasan Kegiatan Masyarakat (PPKM). Bantuan bisa disalurkan ke Kantor Layanan Lazismu (KLL) Pasirian di Jalan Raya Embong Miring, Kebonan, Pasirian, Kabupaten Lumajang,” tuturnya. (*)</p>
+            </div>
+         </div>
+      </div>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>
