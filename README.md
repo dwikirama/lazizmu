@@ -1,6 +1,6 @@
 PROJECT PEMROGRAMAN BERBASIS WEB
 
-Nama website : Lazizmu
+Nama website : Lazizmu Lumajang
 
 Kelompok 8:
 
