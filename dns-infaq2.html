@@ -120,7 +120,7 @@
 			}
 			
 			/* Style untuk tombol infaq */
-			.infaq-btn {
+			.back-btn, .home-btn {
 				background-color: rgba(255, 255, 255, 0.3); /* Warna latar belakang dengan transparansi */
 				color: #ffffff;
 				margin-right: 10px;
@@ -128,79 +128,81 @@
 				transition: transform 0.3s;
 			}
 
-			.infaq-btn:hover {
+			.back-btn, .home-btn:hover {
 				transform: scale(1.2);
-			}
-			
-			/* Style untuk tombol zakat */
-			.zakat-btn {
-				background-color: rgba(255, 255, 255, 0.3); /* Warna latar belakang dengan transparansi */
-				color: #ffffff;
-				margin-left: 10px;
-				padding: 10px;
-				transition: transform 0.3s;
-			}
-
-			.zakat-btn:hover {
-				transform: scale(1.2);
-			}
-
-			/* ... CSS sebelumnya ... */
+			  }
 
 			.infaq-box {
-   		 	/* Gaya untuk lapisan background putih transparan di dalam donation-box */
-    			background-color: rgba(255, 255, 255, 0.8);
-    			padding: 10px;
-    			width: 272px;
-    			height: 268px;
-    			border-radius: 5px;
-    			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    			margin-bottom: 20px;
-    			text-align: center;
-    			display: flex;
-    			flex-direction: column;
-    			justify-content: space-between;
-    			max-width: 100%; /* Menambahkan max-width */
-    			position: relative;
-				transition: transform 0.3s;
+				/* Gaya untuk lapisan background putih transparan di dalam donation-box */
+				background-color: rgba(255, 255, 255, 0.8);
+				padding: 15px;
+				width: 88%;
+				height: auto;
+				border-radius: 5px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+				margin-bottom: 20px;
+				text-align: center;
+				display: flex;
+				flex-direction: column; /* Mengubah orientasi flex ke kolom */
+				justify-content: space-between;
+				max-width: 100%; /* Menambahkan max-width */
+				position: relative;
 			}
 
-			.infaq-box:hover {
-				transform: scale(1.2);
+			.infaq-box1 {
+				/* Gaya untuk lapisan background putih transparan di dalam donation-box */
+				background-color: rgba(255, 255, 255, 0.8);
+				padding: 15px;
+				width: 88%;
+				height: auto;
+				border-radius: 5px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+				margin-bottom: 20px;
+				text-align: left;
+				display: flex;
+				flex-direction: column; /* Mengubah orientasi flex ke kolom */
+				justify-content: space-between;
+				max-width: 100%; /* Menambahkan max-width */
+				position: relative;
 			}
 
 			/* ... CSS sebelumnya ... */
 
 			/* Tambahkan media query untuk menyesuaikan tata letak saat lebar layar lebih kecil */
 			@media (max-width: 768px) {
-    		.infaq-section {
-        		flex-direction: column; /* Mengubah orientasi flex ke kolom */
-        		align-items: center; /* Pusatkan item secara horizontal */
-    		}
+				.infaq-section {
+					flex-direction: column; /* Mengubah orientasi flex ke kolom */
+					align-items: center; /* Pusatkan item secara horizontal */
+				}
 
-    		.infaq-item {
-        		width: 100%; /* Lebar item menjadi 100% */
-    		}
-		}
+				.infaq-box {
+					width: 100%; /* Lebar box mengambil 100% dari parent (infaq-section) */
+				}
+
+				.infaq-item {
+					width: 100%; /* Lebar item menjadi 100% */
+				}
+			}
 
 			
 			.infaq-section {
-    		/* Gaya untuk lapisan background putih transparan di dalam infaq-section */
-    			background-color: rgba(255, 255, 255, 0.5);
-    			padding: 15px;
-    			max-width: 800px;
-    			height: auto;
+				/* Gaya untuk lapisan background putih transparan di dalam infaq-section */
+				background-color: rgba(255, 255, 255, 0.5);
+				padding: 15px;
+				max-width: 800px;
+				height: auto;
 				border-radius: 9px;
 				display: flex;
+				flex-direction: column; /* Mengubah orientasi flex ke kolom */
 				justify-content: space-around; /* Untuk menyeimbangkan jarak antar box */
-				align-items: center;
+				align-items: center; /* Pusatkan item secara horizontal */
 				margin: auto;
 				margin-top: 20px;
 			}
 			
 			.infaq-item {
 				text-align: center;
-				width: 100%; /* Mengubah width menjadi 100% */
+				width: 100%; /* Lebar item menjadi 100% */
 				position: relative; /* Tambahkan position relative untuk menentukan ukuran infaq-box */
 			}
 
@@ -209,11 +211,10 @@
 			}
 
 			.infaq-img {
-				width: 100%; /* Ukuran gambar mengambil 100% dari parent (infaq-item) */
-				max-width: 252px; /* Ukuran maksimum gambar */
-				height: auto; /* Biarkan tinggi menyesuaikan agar tidak terdistorsi */
+				width: 100%; /* Lebar gambar mengambil 100% dari parent (infaq-item) */
+				height: auto; /* Tinggi otomatis menyesuaikan aspek rasio */
 				border-radius: none;
-				border: 2px solid bisque; /* Menambahkan garis border jika diinginkan */
+				border: 2px solid rgb(0, 0, 0); /* Menambahkan garis border jika diinginkan */
 				margin: 0 auto; /* Pusatkan gambar secara horizontal */
 			}
 			
@@ -221,7 +222,7 @@
 				margin-top: 10px;
 				color: #000;
 				font-weight: bold;
-				text-align: center;
+				text-align: left;
 			}
 			
 			.donate-btn {
@@ -239,7 +240,27 @@
 			.donate-btn:hover {
 				transform: scale(1.2);
 			  }
+
+			.infaq-maps {
+				text-align: left;
+				font-weight: bold;
+			}
+
+			.infaq-image {
+				text-align: left; /* Pusatkan teks */
+			}
 			
+			.infaq-image img {
+				width: 100px; /* Sesuaikan dengan lebar yang diinginkan */
+				height: auto; /* Biarkan tinggi disesuaikan secara otomatis */
+				border-radius: 50%; /* Membuat gambar lingkaran */
+				border: 1px solid #000; /* Menentukan lebar dan warna border */
+			}
+			
+			.infaq-box1 details img {
+				max-width: 100%; /* Maksimum lebar gambar adalah 100% dari lebar elemen details */
+				height: auto; /* Tinggi gambar disesuaikan secara otomatis agar tetap proporsional */
+			}
 			
 			/* Add more styling as needed */
 	
@@ -337,40 +358,58 @@
         <!-- Page Content  -->
       <div id="content" class="p-4 p-md-5 pt-5">
 		<div class="donation">
-			<a href="program.html" class="infaq-btn" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"><ion-icon name="pricetag"></ion-icon> Infaq</a>
-			<a href="zakat.html" class="zakat-btn" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"><ion-icon name="pricetag"></ion-icon> Zakat</a>
+			<a href="program.html" class="back-btn" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"><ion-icon name="arrow-back"></ion-icon> Kembali</a>
+            <a href="beranda.html" class="home-btn" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"><ion-icon name="home-outline"></ion-icon> Home</a>
 			</div>
 
 			<div class="infaq-section">
-				<div class="infaq-box" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-					<div class="infaq-item">
-						<img src="./images/infaq-lazismu-lumajang.png" alt="infaq1" class="infaq-img">
-						<div class="infaq-content">
-							<div class="infaq-name">TUNAIKAN INFAQ BERSAMA LAZISMU LUMAJANG
-								<button class="donate-btn" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"><a href="dns-infaq1.html">DONASI SEKARANG</a></button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="infaq-box" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+				<div class="infaq-box">
 					<div class="infaq-item">
 						<img src="./images/lembaga-amil-Zakat-infaq-infak-dan-sedekah-sadaqah-muhammadiyah-lumajang-banner-campaign-orang-tua-asuh2-650x350-1.png" alt="infaq2" class="infaq-img">
 						<div class="infaq-content">
 							<div class="infaq-name">BANTU YATIM DHUAFA
-								<button class="donate-btn" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"><a href="dns-infaq2.html">DONASI SEKARANG</a></button>
+								<div class="infaq-maps"><a href="https://www.google.com/maps/place/Lembaga+Amil,+Zakat,+Infaq+dan+Sedekah+Nasional:+Lazismu+Lumajang/@-8.13196,113.231243,15z/data=!4m5!3m4!1s0x0:0x60194722bdab9e1e!8m2!3d-8.13196!4d113.231243"><ion-icon name="location-outline"></ion-icon>Lumajang, Jawa Timur</a>
+								</div>
 							</div>
+							<button class="donate-btn" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"><a href="#">DONASI SEKARANG</a></button>
 						</div>
 					</div>
 				</div>
-				<div class="infaq-box" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-					<div class="infaq-item">
-						<img src="./images/sedekah jum'at berkah.png" alt="infaq3" class="infaq-img">
-						<div class="infaq-content">
-							<div class="infaq-name">SEDEKAH JUM'AT BERKAH
-								<button class="donate-btn" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"><a href="dns-infaq3.html">DONASI SEKARANG</a></button>
-							</div>
+			</div>
+
+			<div class="infaq-section">
+				<div class="infaq-box1">
+					<div class="infaq-name">PENGGALANG DANA</div>
+						<div class="infaq-image">
+							<img src="https://lazismulumajang.org/wp-content/uploads/2022/02/lembaga-amil-Zakat-infaq-infak-dan-sedekah-sadaqah-muhammadiyah-lumajang-foto-profil-500x500-1-150x150.jpg" alt="Lazismu">
+							<span><a href="index.html">Tim Lazismu Lumajang </a>✔️</span>
 						</div>
-					</div>
+				</div>
+			</div>
+
+			<div class="infaq-section">
+				<div class="infaq-box1">
+					<div class="infaq-name">Keterangan</div>
+					<p>Assalamu'alaikum <b>Ayah Bunda!</b> <br><br>
+						Tanpa kita sadari di luar sana ada banyak <b>anak-anak cerdas, pintar, dan berprestasi</b>. Namun sayangnya mereka tak memiliki banyak kesempatan untuk bisa bersinar seperti anak-anak lainnya yang mempunyai orang tua dengan kemapanan ekonomi. <br><br>
+						<details style="color:#000">
+							<summary>Baca Selengkapnya</summary>
+                            <div class="img">
+                                <img src="./images/bantu yatim 1.jpg" alt="1">
+						<img src="./images/bantu yatim 2.jpg" alt="2">
+                            </div>
+							Sering kali <b>kesenjangan ekonomi</b> membuat mereka menyembunyikan kecerdasan dan kemampuannya demi tidak merasakan kekecewaan yang mendalam. Beberapa dari mereka bahkan merelakan waktu sekolah dan bermainnya untuk bisa membantu pekerjaan orang tuanya agar kebutuhannya di rumah dapat terpenuhi. <br><br>
+                            <div class="img">
+                                <img src="./images/bantu yatim 3.jpg" alt="3">
+						<img src="./images/bantu yatim 4.jpg" alt="4">
+                        <img src="./images/bantu yatim 5.jpg" alt="5">
+                            </div>
+                            Karena dari itu kami mengajak Ayah Bunda menjadi <b>Orang Tua Asuh untuk anak-anak Yatim dan Dhuafa yang kesulitan dalam memenuhi kebutuhan hidup dan pendidikan mereka.</b> Agar kita semua bisa menyelamatkan masa depan mereka serta membantu menghidupkan cita-citanya. <br><br></p>
+						<div class="img">
+						<img src="./images/infaq lazismu 1.jpg" alt="1">
+						</div>
+						<p>Mari ambil kesempatan berharga menjadi <b>Orang Tua Asuh,</b> dan selamatkan masa depan ribuan anak Indonesia dengan memberikan <b>infaq mulai Rp100.000/bulan</b> serta mampu berkomitmen untuk berdonasi selama satu tahun ke depan.<br><br></p>
+						</details>
 				</div>
 			</div>
 

@@ -99,22 +99,145 @@
 				color: black;
 			}
 
-            .qr-code-container {
-                max-width: 100%;
-                text-align: center;
-            }
-        
-            .qr-code-container img {
-                max-width: 100%;
-                height: auto;
-            }
-
-            .lazismu-image {
-				max-width: 100%; /* Gambar tidak boleh melebihi lebar container */
-				height: auto; /* Menyesuaikan tinggi sesuai aspek rasio gambar */
-				display: block; /* Menghindari margin bawah pada elemen inline */
+			.donation {
+				display: flex;
+				justify-content: flex-start;
+				max-width: 600px;
+				margin: auto;
 			}
-	
+			
+			.donation a {
+				text-decoration: none;
+				color: #000;
+				padding: 10px;
+				position: relative;
+				font-weight: bold;
+			}
+			
+			.donation a:hover {
+				background-color: rgba(28, 169, 89, 0.5); /* Transparansi pada hover */
+				color: #ffffff;
+			}
+			
+			/* Style untuk tombol infaq */
+			.infaq-btn {
+				background-color: rgba(255, 255, 255, 0.3); /* Warna latar belakang dengan transparansi */
+				color: #ffffff;
+				margin-right: 10px;
+				padding: 10px;
+				transition: transform 0.3s;
+			}
+
+			.infaq-btn:hover {
+				transform: scale(1.2);
+			}
+			
+			/* Style untuk tombol zakat */
+			.zakat-btn {
+				background-color: rgba(255, 255, 255, 0.3); /* Warna latar belakang dengan transparansi */
+				color: #ffffff;
+				margin-left: 10px;
+				padding: 10px;
+				transition: transform 0.3s;
+			}
+
+			.zakat-btn:hover {
+				transform: scale(1.2);
+			}
+
+			.infaq-box {
+   		 	/* Gaya untuk lapisan background putih transparan di dalam donation-box */
+    			background-color: rgba(255, 255, 255, 0.8);
+    			padding: 10px;
+    			width: 272px;
+    			height: 268px;
+    			border-radius: 5px;
+    			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    			margin-bottom: 20px;
+    			text-align: left;
+    			display: flex;
+    			flex-direction: column;
+    			justify-content: left;
+    			max-width: 100%; /* Menambahkan max-width */
+    			position: relative;
+				transition: transform 0.3s;
+			}
+
+			.infaq-box:hover {
+				transform: scale(1.2);
+			}
+
+			/* ... CSS sebelumnya ... */
+
+			/* Tambahkan media query untuk menyesuaikan tata letak saat lebar layar lebih kecil */
+			@media (max-width: 768px) {
+    		.infaq-section {
+        		flex-direction: column; /* Mengubah orientasi flex ke kolom */
+        		align-items: center; /* Pusatkan item secara horizontal */
+    		}
+
+    		.infaq-item {
+        		width: 100%; /* Lebar item menjadi 100% */
+    		}
+		}
+			
+			.infaq-section {
+				/* Gaya untuk lapisan background putih transparan di dalam infaq-section */
+				background-color: rgba(255, 255, 255, 0.5);
+				padding: 15px;
+				max-width: 800px;
+				height: auto;
+				border-radius: 9px;
+				display: flex;
+				justify-content: left; /* Untuk menyeimbangkan jarak antar box */
+				align-items:start;
+				margin: auto;
+				margin-top: 20px;
+			}
+			
+			.infaq-item {
+				text-align: left;
+				width: 100%; /* Mengubah width menjadi 100% */
+				position: relative; /* Tambahkan position relative untuk menentukan ukuran infaq-box */
+			}
+
+			.infaq-content {
+				margin-top: 10px;
+			}
+
+			.infaq-img {
+				width: 100%; /* Ukuran gambar mengambil 100% dari parent (infaq-item) */
+				max-width: 252px; /* Ukuran maksimum gambar */
+				height: auto; /* Biarkan tinggi menyesuaikan agar tidak terdistorsi */
+				border-radius: none;
+				border: 2px solid bisque; /* Menambahkan garis border jika diinginkan */
+				margin: 0 auto; /* Pusatkan gambar secara horizontal */
+			}
+			
+			.infaq-name {
+				margin-top: 10px;
+				color: #000;
+				font-weight: bold;
+				text-align: center;
+			}
+			
+			.donate-btn {
+				background-color: rgba(28, 169, 89, 0.5);
+				color: #ffffff;
+				border: none;
+				padding: 10px;
+				cursor: pointer;
+				position: relative;
+				object-position: center;
+				display: inline-block;
+      			transition: transform 0.3s;
+			}
+
+			.donate-btn:hover {
+				transform: scale(1.2);
+			  }
+			
+			
 			/* Add more styling as needed */
 	
 		</style>
@@ -210,17 +333,26 @@
 
         <!-- Page Content  -->
       <div id="content" class="p-4 p-md-5 pt-5">
+		<div class="donation">
+			<a href="program.html" class="infaq-btn" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"><ion-icon name="pricetag"></ion-icon> Infaq</a>
+			<a href="zakat.html" class="zakat-btn" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"><ion-icon name="pricetag"></ion-icon> Zakat</a>
+			</div>
 
-        <div>
-            <h2 class="mb-4">QR Kode Donasi</h2>
-            <div class="qr-code-container">
-                <img src="https://lazismulumajang.org/wp-content/uploads/2022/02/lembaga-amil-Zakat-infaq-infak-dan-sedekah-sadaqah-muhammadiyah-lumajang-qris-infaq-454x640-1.jpeg" alt="qr kode donasi">
-            </div>
-        </div>
-        <div class="banner">
-            <img src="./images/LAZISMU BAWAH.png" alt="Banner Image" class="lazismu-image">
-        </div>
-		
+			<div class="infaq-section">
+				<div class="infaq-box" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+					<div class="infaq-item">
+						<img src="./images/lembaga-amil-Zakat-infaq-infak-dan-sedekah-sadaqah-muhammadiyah-lumajang-banner-campaign-zakat3-650x350-1.png" alt="zakat1" class="infaq-img">
+						<div class="infaq-content">
+							<div class="infaq-name">TUNAIKAN ZAKAT BERSAMA LAZISMU LUMAJANG
+								<button class="donate-btn" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"><a href="dns-zkt1.html">DONASI SEKARANG</a></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	  </div>
 	</div>
   </div>
 
@@ -228,5 +360,18 @@
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<script>
+		// Fungsi untuk memperbesar tombol
+		function zoomIn(element) {
+		  element.style.transform = "scale(1.2)";
+		}
+	
+		// Fungsi untuk mengembalikan ukuran asli tombol
+		function zoomOut(element) {
+		  element.style.transform = "scale(1)";
+		}
+	  </script>
   </body>
 </html>

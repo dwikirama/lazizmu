@@ -124,24 +124,44 @@
 			.executive-btn {
     			background-color: none;
     			color: #ffffff;
+				transition: transform 0.3s;
+			}
+
+			.executive-btn:hover {
+				transform: scale(1.2);
 			}
 
 			/* Style untuk tombol Badan Pengurus */
 			.management-btn {
     			background-color: none;
     			color: #ffffff;
+				transition: transform 0.3s;
+			}
+
+			.management-btn:hover {
+				transform: scale(1.2);
 			}
 
 			/* Style untuk tombol Badan Pengawas */
 			.supervisory-btn {
     			background-color: none;
     			color: #ffffff;
+				transition: transform 0.3s;
+			}
+
+			.supervisory-btn:hover {
+				transform: scale(1.2);
 			}
 
 			/* Style untuk tombol Dewan Syariah */
 			.sharia-council-btn {
     			background-color: none;
     			color: #ffffff;
+				transition: transform 0.3s;
+			}
+
+			.sharia-council-btn:hover {
+				transform: scale(1.2);
 			}
 
 			.management-section {
@@ -196,26 +216,46 @@
 			.executive-btn {
     			background-color: none;
     			color: #ffffff;
-				}
+				transition: transform 0.3s;
+			}
+
+			.executive-btn:hover {
+				transform: scale(1.2);
+			}
 
 			/* Style untuk tombol Badan Pengurus */
 			.management-btn {
     			background-color: none;
     			color: #ffffff;
-				}
+				transition: transform 0.3s;
+			}
+
+			.management-btn:hover {
+				transform: scale(1.2);
+			}
 
 			/* Style untuk tombol Badan Pengawas */
 			.supervisory-btn {
     			background-color: none;
     			color: #ffffff;
-				}
+				transition: transform 0.3s;
+			}
+
+			.supervisory-btn:hover {
+				transform: scale(1.2);
+			}
 
 			/* Style untuk tombol Dewan Syariah */
 			.sharia-council-btn {
     			background-color: none;
     			color: #ffffff;
-				}
+				transition: transform 0.3s;
 			}
+
+			.sharia-council-btn:hover {
+				transform: scale(1.2);
+			}
+		}
 			
 	
 			/* Add more styling as needed */
@@ -316,10 +356,10 @@
         <!-- Page Content  -->
       <div id="content" class="p-4 p-md-5 pt-5">
 		<div class="organizational-structure">
-			<a href="struktur_manajemen.html" class="executive-btn">Badan Eksekutif</a>
-			<a href="badanpengurus.html" class="management-btn">Badan Pengurus</a>
-			<a href="badanpengawas.html" class="supervisory-btn">Badan Pengawas</a>
-			<a href="dewansyariah.html" class="sharia-council-btn">Dewan Syariah</a>
+			<a href="struktur_manajemen.html" class="executive-btn" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">Badan Eksekutif</a>
+			<a href="badanpengurus.html" class="management-btn" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">Badan Pengurus</a>
+			<a href="badanpengawas.html" class="supervisory-btn" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">Badan Pengawas</a>
+			<a href="dewansyariah.html" class="sharia-council-btn" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">Dewan Syariah</a>
 		</div>
 
 		<div class="management-section">
@@ -387,5 +427,16 @@
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+	<script>
+		// Fungsi untuk memperbesar tombol
+		function zoomIn(element) {
+		  element.style.transform = "scale(1.2)";
+		}
+	
+		// Fungsi untuk mengembalikan ukuran asli tombol
+		function zoomOut(element) {
+		  element.style.transform = "scale(1)";
+		}
+	  </script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Lazizmu Lumajang</title>
+  	<title>Sidebar 02</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
@@ -98,7 +98,204 @@
 			p {
 				color: black;
 			}
-	
+
+			.donation {
+				display: flex;
+				justify-content: flex-start;
+				max-width: 600px;
+				margin: auto;
+			}
+			
+			.donation a {
+				text-decoration: none;
+				color: #000;
+				padding: 10px;
+				position: relative;
+				font-weight: bold;
+			}
+			
+			.donation a:hover {
+				background-color: rgba(28, 169, 89, 0.5); /* Transparansi pada hover */
+				color: #ffffff;
+			}
+			
+			/* Style untuk tombol infaq */
+			.back-btn, .home-btn {
+				background-color: rgba(255, 255, 255, 0.3); /* Warna latar belakang dengan transparansi */
+				color: #ffffff;
+				margin-right: 10px;
+				padding: 10px;
+			}
+
+			.infaq-box {
+				/* Gaya untuk lapisan background putih transparan di dalam donation-box */
+				background-color: rgba(255, 255, 255, 0.8);
+				padding: 15px;
+				width: 88%;
+				height: auto;
+				border-radius: 5px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+				margin-bottom: 20px;
+				text-align: center;
+				display: flex;
+				flex-direction: column; /* Mengubah orientasi flex ke kolom */
+				justify-content: space-between;
+				max-width: 100%; /* Menambahkan max-width */
+				position: relative;
+			}
+
+			.infaq-box1 {
+				/* Gaya untuk lapisan background putih transparan di dalam donation-box */
+				background-color: rgba(255, 255, 255, 0.8);
+				padding: 15px;
+				width: 88%;
+				height: auto;
+				border-radius: 5px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+				margin-bottom: 20px;
+				text-align: center;
+				display: flex;
+				flex-direction: column; /* Mengubah orientasi flex ke kolom */
+				justify-content: space-between;
+				max-width: 100%; /* Menambahkan max-width */
+				position: relative;
+			}
+
+			.infaq-box2 {
+				/* Gaya untuk lapisan background putih transparan di dalam donation-box */
+				background-color: rgba(255, 255, 255, 0.8);
+				padding: 15px;
+				width: 560px;
+				height: auto;
+				border-radius: 5px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+				margin-bottom: 20px;
+				text-align: center;
+				display: flex;
+				flex-direction: column; /* Mengubah orientasi flex ke kolom */
+				justify-content: space-between;
+				max-width: 100%; /* Menambahkan max-width */
+				position: relative;
+			}
+
+			/* ... CSS sebelumnya ... */
+
+			/* Tambahkan media query untuk menyesuaikan tata letak saat lebar layar lebih kecil */
+			@media (max-width: 768px) {
+				.infaq-section {
+					flex-direction: column; /* Mengubah orientasi flex ke kolom */
+					align-items: center; /* Pusatkan item secara horizontal */
+				}
+
+				.infaq-box {
+					width: 100%; /* Lebar box mengambil 100% dari parent (infaq-section) */
+				}
+
+				.infaq-box2 {
+					/* Gaya untuk lapisan background putih transparan di dalam donation-box */
+					background-color: rgba(255, 255, 255, 0.8);
+					padding: 15px;
+					width: 88%;
+					height: auto;
+					border-radius: 5px;
+					box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+					margin-bottom: 20px;
+					text-align: center;
+					display: flex;
+					flex-direction: column; /* Mengubah orientasi flex ke kolom */
+					justify-content: space-between;
+					max-width: 100%; /* Menambahkan max-width */
+					position: relative;
+				}
+
+				.infaq-item {
+					width: 100%; /* Lebar item menjadi 100% */
+				}
+			}
+
+			
+			.infaq-section {
+				/* Gaya untuk lapisan background putih transparan di dalam infaq-section */
+				background-color: rgba(255, 255, 255, 0.5);
+				padding: 15px;
+				max-width: 800px;
+				height: auto;
+				border-radius: 9px;
+				display: flex;
+				flex-direction: column; /* Mengubah orientasi flex ke kolom */
+				justify-content: space-around; /* Untuk menyeimbangkan jarak antar box */
+				align-items: center; /* Pusatkan item secara horizontal */
+				margin: auto;
+				margin-top: 20px;
+			}
+			
+			.infaq-item {
+				text-align: center;
+				width: 100%; /* Lebar item menjadi 100% */
+				position: relative; /* Tambahkan position relative untuk menentukan ukuran infaq-box */
+			}
+
+			.infaq-content {
+				margin-top: 10px;
+			}
+
+			.infaq-img {
+				width: 100%; /* Lebar gambar mengambil 100% dari parent (infaq-item) */
+				height: auto; /* Tinggi otomatis menyesuaikan aspek rasio */
+				border-radius: none;
+				border: 2px solid rgb(0, 0, 0); /* Menambahkan garis border jika diinginkan */
+				margin: 0 auto; /* Pusatkan gambar secara horizontal */
+			}
+
+			.infaq-img2 {
+				max-width: 100%; /* Ukuran gambar mengambil 100% dari parent (infaq-item) */
+				width: 250px;
+				justify-content: center;
+				text-align: center;
+				height: auto; /* Biarkan tinggi menyesuaikan agar tidak terdistorsi */
+				border-radius: none;
+			}
+
+			.infaq-name {
+				margin-top: 10px;
+				color: #000;
+				font-weight: bold;
+				text-align: left;
+			}
+			
+			.donate-btn {
+				background-color: rgba(28, 169, 89, 0.5);
+				color: #ffffff;
+				border: none;
+				padding: 10px;
+				cursor: pointer;
+				position: relative;
+			}
+
+			.infaq-maps {
+				text-align: left;
+				font-weight: bold;
+			}
+
+			.infaq-image {
+				text-align: left; /* Pusatkan teks */
+			}
+			
+			.infaq-image img {
+				width: 100px; /* Sesuaikan dengan lebar yang diinginkan */
+				height: auto; /* Biarkan tinggi disesuaikan secara otomatis */
+				border-radius: 50%; /* Membuat gambar lingkaran */
+			}
+			
+			.infaq-box1 details img {
+				max-width: 100%; /* Maksimum lebar gambar adalah 100% dari lebar elemen details */
+				height: auto; /* Tinggi gambar disesuaikan secara otomatis agar tetap proporsional */
+			}
+			
+			.infaq-item .text1 span {
+				color: #000;
+			}
+			
 			/* Add more styling as needed */
 	
 		</style>
@@ -194,11 +391,65 @@
 
         <!-- Page Content  -->
       <div id="content" class="p-4 p-md-5 pt-5">
+		<div class="donation">
+			<a href="program.html" class="back-btn"><ion-icon name="arrow-back"></ion-icon> Kembali</a>
+			<a href="beranda.html" class="home-btn"><ion-icon name="home-outline"></ion-icon> Home</a>
+			</div>
 
-        <h2 class="mb-4">Sidebar #02</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		
+			<div class="infaq-section">
+				<div class="infaq-box">
+					<div class="infaq-item">
+						<img src="./images/tim lazismu lumajang.jpg" alt="infaq1" class="infaq-img">
+						<div class="infaq-image">
+							<img src="https://lazismulumajang.org/wp-content/uploads/2022/02/lembaga-amil-Zakat-infaq-infak-dan-sedekah-sadaqah-muhammadiyah-lumajang-foto-profil-500x500-1-150x150.jpg" alt="Lazismu">
+							<span><a href="#">Tim Lazismu Lumajang </a>✔️</span>
+							<p style="color: #6d6b6b;">Jl. Brantas No.36 Jogoyudan 67315 - , ,</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="infaq-section">
+				<div class="infaq-box1">
+					<div class="infaq-name">Biography</div>
+					<p>LAZISMU adalah lembaga zakat nasional dengan SK Menag No. 730 Tahun 2016, yang berkhidmat dalam pemberdayaan masyarakat melalui pendayagunaan dana zakat, infaq, wakaf dan dana kedermawanan lainnya baik dari perseorangan, lembaga, perusahaan dan instansi lainnya. Lazismu tidak menerima segala bentuk dana yang bersumber dari kejahatan. UU RI No. 8 Tahun 2010 Tentang Pencegahan dan Pemberantasan Tindak Pidana Pencucian Uang.</p>
+				</div>
+			</div>
+
+			<div class="infaq-section">
+				<div class="infaq-box1">
+					<div class="infaq-name">Campaign (4)</div>
+					<div class="infaq-section">
+						<div class="infaq-box2">
+							<div class="infaq-item">
+								<img src="./images/infaq-lazismu-lumajang.png" alt="infaq1" class="infaq-img2"><br>
+								<a href="dns-infaq1.html"><span class="text1">TUNAIKAN INFAQ BERSAMA LAZISMU LUMAJANG</span></a>
+							</div>
+						</div>
+						<div class="infaq-box2">
+							<div class="infaq-item">
+								<img src="./images/lembaga-amil-Zakat-infaq-infak-dan-sedekah-sadaqah-muhammadiyah-lumajang-banner-campaign-orang-tua-asuh2-650x350-1.png" alt="infaq2" class="infaq-img2"><br>
+								<a href="dns-infaq2.html"><span class="text1">BANTU YATIM DHUAFA</span></a>
+							</div>
+						</div>
+						<div class="infaq-box2">
+							<div class="infaq-item">
+								<img src="./images/sedekah jum'at berkah.png" alt="infaq3" class="infaq-img2"><br>
+								<a href="dns-infaq3.html"><span class="text1">SEDEKAH JUM'AT BERKAH</span></a>
+							</div>
+						</div>
+						<div class="infaq-box2">
+							<div class="infaq-item">
+								<img src="./images/lembaga-amil-Zakat-infaq-infak-dan-sedekah-sadaqah-muhammadiyah-lumajang-banner-campaign-zakat3-650x350-1.png" alt="zakat1" class="infaq-img2"><br>
+								<a href="dns-zkt1.html"><span class="text1">TUNAIKAN ZAKAT BERSAMA LAZISMU LUMAJANG</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	  </div>
 	</div>
   </div>
 
@@ -206,5 +457,7 @@
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
