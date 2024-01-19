@@ -1,0 +1,169 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('IMG/BackgroundEraser_20231212_132147592.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  background: linear-gradient(to right, rgba(30, 117, 6, 0.797), #ffd500b4);
+  border: 2px solid rgba(255, 217, 0, 0.5);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.container header {
+    font-size: 2em;
+    color: #080808;
+    font-weight: 500;
+    text-align: center;
+}
+.container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #333;
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+  background: white;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+.gender input {
+  accent-color: rgb(130, 106, 251);
+}
+.form :where(.gender input, label) {
+  cursor: pointer;
+}
+.gender label {
+  color: #707070;
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+
+
+.remember-forgot {
+    font-size: .9em;
+    color: #000000;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3ch;
+}
+
+.remember-forgot .checkbox {
+    color: #fff;
+}
+
+.remember-forgot input {
+    color: #000000;
+}
+
+.remember-forgot label input {
+    accent-color: #162938;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: linear-gradient(to right, #ffd500b4, rgba(30, 117, 6, 0.797));;
+    text-decoration: none;
+    margin-right: 3px;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    outline: #162938;
+    cursor: pointer;
+    color: #162938;
+}
+
+.login-register {
+    font-size: .9em;
+    color: #000000;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p {
+    color: #000000;
+}
+
+.login-register a {
+    color: linear-gradient(to right, #ffd500b4, rgba(30, 117, 6, 0.797));;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+}
+
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}

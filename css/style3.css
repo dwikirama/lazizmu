@@ -1,0 +1,178 @@
+			body {
+				font-family: 'Poppins', sans-serif;
+				overflow-x: hidden;
+				margin: 0;
+				padding: 0;
+			}
+
+			.banner-container {
+				overflow: hidden;
+			}
+	
+			.banner {
+				width: auto;
+				height: auto;
+				display:block;
+			}
+	
+			.white-space {
+				height: 65px;
+				width: auto;
+				background-color: #ffffff;
+			}
+	
+			.navbar {
+				background-color: #150327;
+				padding: 15px;
+				box-shadow: 0 4px 6px #ffffff;
+				display: flex;
+            	justify-content: space-between;
+            	align-items: center;
+				position: relative;
+				z-index: 1;
+			}
+	
+			.navbar-buttons {
+				margin-left: auto;
+			}
+	
+			.navbar-buttons button,
+			.navbar-buttons a {
+				margin-left: 10px;
+				background-color: #150327;
+				border-radius: 2cm;
+				border-style: double;
+				border-color: bisque;
+			}
+
+			.menu-top {
+				background-image: url(./images/LAZISMU\ BAWAH.png);
+				background-color: rgba(250, 255, 221, 0.797);
+				background-size: auto;
+				background-repeat: no-repeat;
+				background-position: center;
+				padding: 15px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				position: relative;
+				z-index: 2;
+				color: #ffffff;
+			}
+	
+			.menu-top a {
+				color: #ffffff;
+				text-decoration: none;
+				margin: auto;
+			}
+
+			#sidebarCollapse {
+				margin-right: 18px;
+			}
+	
+			#content {
+				width: 100%;
+				padding: 15px;
+				background: linear-gradient(to right, rgba(250, 255, 221, 0.797), #fecfef);
+			}
+
+			.logo img {
+				width: 100px;
+				height: auto;
+				margin-right: 10px;
+			}
+
+			p {
+				color: black;
+			}
+
+            .body1 {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+
+            .container1 {
+                width: 100%;
+                margin: auto;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin-top: 30px;
+                padding: 20px;
+                border-radius: 5px;
+                overflow-x: auto;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 10px;
+                border-radius: 5px;
+                overflow: hidden;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            }
+
+            th,
+            td {
+                padding: 15px;
+                text-align: center;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .body1 th {
+                background-color: #000;
+                color: #fff;
+                text-align: center;
+            }
+
+            tr.highlight {
+                background: linear-gradient(to right, rgba(250, 255, 221, 0.797), #fecfef);
+                color: #333;
+                transition: background 0.3s; /* Efek transisi 0.3 detik */
+            }
+
+            tr.highlight:hover {
+                background: linear-gradient(to right, #f1c40f, #ffeb3b); /* Ubah warna gradient pada hover */
+                cursor: pointer; /* Ganti kursor menjadi pointer untuk menunjukkan elemen dapat diinteraksi */
+            }
+
+            .modal-title.fs-5 {
+                font-weight: bold;
+                text-align: center; /* Tambahkan properti text-align: center; */
+                margin: 0 auto; /* Tambahkan properti margin: 0 auto; untuk pemusatannya */
+                position: absolute;
+                width: 100%; /* Sesuaikan lebar agar memenuhi container */
+                left: 0; /* Pastikan posisi horizontal ke kiri */
+                right: 0; /* Pastikan posisi horizontal ke kanan */
+            }
+
+            .modal-header .icon-close {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 20px;
+                height: 20px;
+                background: #fff;
+                font-size: 1em;
+                color: #000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10%;
+                cursor: pointer;
+            }
+
+            .modal-header .icon-close:hover {
+                background: rgb(255, 0, 0);
+                color: #fff;
+            }
+
+            .icon-person,
+            .icon-mail,
+            .icon-home,
+            .icon-call,
+            .icon-chatbubbles {
+                left: 3.5%;
+                height: 37px;
+            }
