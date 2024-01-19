@@ -4,7 +4,7 @@ Nama website : Lazizmu Lumajang
 
 Kelompok 8:
 
-Dimas Hammam Abdillah
-Aulia Zamaira
-Muhammad Dwiki Ramadani
-Adhika Pratama Hakim
+1. Dimas Hammam Abdillah
+2. Aulia Zamaira
+3. Muhammad Dwiki Ramadani
+4. Adhika Pratama Hakim
